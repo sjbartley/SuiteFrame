@@ -1,0 +1,32 @@
+{
+  "author": {
+    "name": "Simeon Bartley"
+  },
+  "description": "Development environment for NetSuite scripts. See Readme.md.",
+  "scripts": {
+    "watch-ts": "tsc -p tsconfig.json --watch",
+    "build-ts": "tsc -p tsconfig.json",
+    "watch": "webpack --config webpack.dev.babel.js --watch --progress",
+    "build": "webpack --config webpack.prd.babel.js --progress"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/plugin-proposal-decorators": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/register": "^7.18.9",
+    "@hitc/netsuite-types": "^2022.1.8",
+    "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "fs": "^0.0.1-security",
+    "jshint": "^2.13.5",
+    "path": "^0.12.7",
+    "terser-webpack-plugin": "^5.3.3",
+    "typescript": "^4.7.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-shell-plugin-next": "^2.2.2"
+  }
+}

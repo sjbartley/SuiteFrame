@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "rootDir": "src/lib",
+    "outDir": "dist/lib",
+    "module": "amd",
+    "target": "ESNext",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Process & infer types from .js files.
+    "allowJs": true,
+    "sourceMap": false,
+    "newLine": "LF",
+    "experimentalDecorators": true,
+    "noImplicitUseStrict": true,
+    //Enable strictest settings like strictNullChecks & noImplicitAny.
+    //"strict": true,
+    "baseUrl": ".",
+    "lib": [
+      "es5",
+      "es2015.promise",
+      "dom"
+    ],
+    "paths": {
+      "N": [
+        "node_modules/@hitc/netsuite-types/N"
+      ],
+      "N/*": [
+        "node_modules/@hitc/netsuite-types/N/*"
+      ]
+    }
+  },
+  "include": [
+    "src/lib/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
