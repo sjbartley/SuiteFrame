@@ -3,22 +3,23 @@
 
 This environment allows scripts in folder 'src' to be copied, built or packed to folder 'dist'.
 
-All files in 'dist' should be synchronised to a folder in the NetSuite file cabinet.
+All files in folder 'dist' should be synchronised to a folder in the NetSuite file cabinet.
 
 Example scripts bundled:
 
-1) A version of NetSuite Upload is copied to dist/native.
-2) A TypeScript refactor of Tim Dietrich's SuiteQL API Restlet is transpiled to dist/lib.
-3) A Typescript refactor of Tim Dietrich's example SuiteFrame utility is packed to dist/pack/sf.
+1) A version of NetSuite Upload is copied to folder /dist/native.
+2) A TypeScript refactor of Tim Dietrich's SuiteQL API Restlet is transpiled to folder /dist/lib.
+3) A Typescript refactor of Tim Dietrich's example SuiteFrame utility is packed to folder /dist/pack/sf.
 
 ## VS Code
 
-The VS Code 'netsuite-upload' extension allows 'dist' to be synchronised/uploaded to NetSuite (<https://github.com/netsuite-upload-org/netsuite-upload>).
+The VS Code 'netsuite-upload' extension allows deplyment files to be synchronised to NetSuite (<https://github.com/netsuite-upload-org/netsuite-upload>).
 
 ## Installation
 
 1) `npm i` to install node modules.
 2) `npm run build` or `npm run watch` to create files in 'dist'.
+3) If using VS Code, install the 'netsuite-upload' extension. Manually upload and deploy /dist/native/vscodeExtensionRestlet.js in NetSuite.
 
 ## Deployed Files
 
